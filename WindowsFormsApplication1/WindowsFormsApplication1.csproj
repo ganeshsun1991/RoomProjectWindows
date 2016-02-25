@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0089C402-D928-4498-B0D3-A2C5122761C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.1.0.0, Culture=neutral, PublicKeyToken=dfffeb5798e0be57, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculation.Designer.cs">
+      <DependentUpon>Calculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculationDomain.cs" />
+    <Compile Include="Change Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change Password.Designer.cs">
+      <DependentUpon>Change Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comman Transaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comman Transaction.Designer.cs">
+      <DependentUpon>Comman Transaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Delete User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Delete User.Designer.cs">
+      <DependentUpon>Edit Delete User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="IndividualUserPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IndividualUserPayment.Designer.cs">
+      <DependentUpon>IndividualUserPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Individual_Transaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Individual_Transaction.Designer.cs">
+      <DependentUpon>Individual_Transaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medhods.cs" />
+    <Compile Include="MonthWiseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthWiseReport.Designer.cs">
+      <DependentUpon>MonthWiseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_User.Designer.cs">
+      <DependentUpon>New_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Room_CommonDL.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="TransactionList.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculation.resx">
+      <DependentUpon>Calculation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Password.resx">
+      <DependentUpon>Change Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comman Transaction.resx">
+      <DependentUpon>Comman Transaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Delete User.resx">
+      <DependentUpon>Edit Delete User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IndividualUserPayment.resx">
+      <DependentUpon>IndividualUserPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Individual_Transaction.resx">
+      <DependentUpon>Individual_Transaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthWiseReport.resx">
+      <DependentUpon>MonthWiseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_User.resx">
+      <DependentUpon>New_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\money-lending.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Oxygen-Icons.org-Oxygen-Actions-edit-delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\1425137640_105225.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\plus %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Delete1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\1426372368_40719.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\plus.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\NewAdd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\NewUpdate.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\NewDelete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ADDNEW1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\test.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\test1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ADDNEW2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ADDNEW3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\redo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Welcome_heading.svg.png" />
+    <None Include="Resource\UserWelcomeScreen.jpg" />
+    <None Include="Resource\adminicon.ico" />
+    <None Include="Resource\user.png" />
+    <None Include="Resource\profile_change_password.jpg" />
+    <None Include="Resource\about_image.jpg" />
+    <None Include="Resource\CalculationImg.jpg" />
+    <Content Include="Resource\welcome-slide-design-backgrounds-powerpoint.jpg" />
+    <Content Include="Resource\Welcome.jpg" />
+    <Content Include="Resource\WelcomeHD.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

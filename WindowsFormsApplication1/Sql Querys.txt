@@ -1,0 +1,1 @@
+create table UserDetails (id int identity(1,1),UserId int,Name varchar(max),NickName varchar(max),[Address] varchar(max),MobileNo1 varchar(20),MobileNo2 varchar(20),JobName varchar(max),JoiningDate datetime)
