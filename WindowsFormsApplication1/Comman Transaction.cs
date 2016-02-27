@@ -39,7 +39,7 @@ namespace WindowsFormsApplication1
 
             label7.Text = type;
         }
-
+        //http://www.smarterasp.net/support/kb/a1579/how-can-i-restore-mssql-database-to-your-server.aspx?KBSearchID=154297
         private void Comman_Transaction_Load(object sender, EventArgs e)
         {
             try
