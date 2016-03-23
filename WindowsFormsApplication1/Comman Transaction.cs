@@ -129,6 +129,7 @@ namespace WindowsFormsApplication1
             }
 
         }
+
         private Boolean Validate(string mode)
         {
             if (comboBox2.SelectedValue == "")
@@ -184,6 +185,7 @@ namespace WindowsFormsApplication1
                 e.Handled = true;
             }
         }
+
         private void Clear()
         {
             dtTransactionDate.Value = DateTime.Now;
@@ -192,6 +194,7 @@ namespace WindowsFormsApplication1
             txtAmt.Text = "";
             txtDescription.Text = "";
         }
+
         private void FillDataGrid(string type, int UserID)
         {
 
@@ -240,8 +243,6 @@ namespace WindowsFormsApplication1
         {
             this.Close();
         }
-
-
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -312,6 +313,7 @@ namespace WindowsFormsApplication1
                 MessageBox.Show(ex.Message + "\nPlease Call system Administrator.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         private Boolean ValidateUpdate()
         {
             if ("" == "")
