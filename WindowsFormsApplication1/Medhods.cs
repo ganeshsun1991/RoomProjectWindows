@@ -863,5 +863,26 @@ namespace WindowsFormsApplication1
             //dt = cmd.ExecuteNonQuery();
             return da;
         }
+        public List<User> GetUsersList(string type)
+        {
+            List<User> res = null;
+            try
+            {
+
+                string sql = "exec [dbo].[FillCombo] '" + type + "'";
+                cn.Open();
+                res = cn.Query<User>(sql).ToList();
+                cn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + "nPlease Call system Administrator.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                cn.Close();
+            }
+            return res;
+        }
     }
 }

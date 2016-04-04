@@ -55,6 +55,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.addParticalAmountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -102,7 +103,8 @@
             this.transactionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.commanTransactionToolStripMenuItem,
             this.individualTransactionToolStripMenuItem,
-            this.editUserTransactionToolStripMenuItem});
+            this.editUserTransactionToolStripMenuItem,
+            this.addParticalAmountToolStripMenuItem});
             this.transactionToolStripMenuItem.Name = "transactionToolStripMenuItem";
             this.transactionToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.transactionToolStripMenuItem.Text = "Transaction";
@@ -271,6 +273,13 @@
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
+            // addParticalAmountToolStripMenuItem
+            // 
+            this.addParticalAmountToolStripMenuItem.Name = "addParticalAmountToolStripMenuItem";
+            this.addParticalAmountToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.addParticalAmountToolStripMenuItem.Text = "Add Partical Amount";
+            this.addParticalAmountToolStripMenuItem.Click += new System.EventHandler(this.addParticalAmountToolStripMenuItem_Click);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -327,5 +336,6 @@
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ToolStripMenuItem monthWiseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addParticalAmountToolStripMenuItem;
     }
 }

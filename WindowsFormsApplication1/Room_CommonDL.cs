@@ -30,5 +30,25 @@ namespace WindowsFormsApplication1
 
         }
 
+        public void common_loadListBox(DataTable objUser, ListBox ListBox)
+        {
+
+            //datarow dr;
+
+            //dr = dtbind.newrow();
+
+            //dr["id"] ="0";
+            //dr["name"] = "select";
+
+            //dtbind.rows.insertat(dr, 0);
+            //ListBox.Items.Add();
+            ListBox.DataSource = objUser;
+            ListBox.ValueMember = "ID";
+            ListBox.DisplayMember = "Name";
+
+
+
+        }
+
     }
 }

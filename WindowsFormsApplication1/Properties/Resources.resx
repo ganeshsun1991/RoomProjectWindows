@@ -157,6 +157,9 @@
   <data name="Welcome_heading.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\Welcome_heading.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CalculationImg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\CalculationImg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="adminicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\adminicon.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,17 +184,17 @@
   <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\add.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UserWelcomeScreen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="UserWelcomeScreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\UserWelcomeScreen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1426372368_40719" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\1426372368_40719.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="New" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\New.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UserWelcomeScreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resource\UserWelcomeScreen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Oxygen-Icons.org-Oxygen-Actions-edit-delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\Oxygen-Icons.org-Oxygen-Actions-edit-delete.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,6 +208,15 @@
   <data name="money-lending" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\money-lending.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="user_remove-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\user_remove-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserWelcomeScreen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\UserWelcomeScreen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="basic1-113_user_delete_remove-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\basic1-113_user_delete_remove-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="business_user_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\business_user_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -217,13 +229,10 @@
   <data name="Welcome" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\Welcome.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1426372368_40719" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resource\1426372368_40719.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="WelcomeHD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\WelcomeHD.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CalculationImg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resource\CalculationImg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="basic1-113_user_delete_remove-5121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\basic1-113_user_delete_remove-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

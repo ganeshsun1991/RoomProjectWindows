@@ -76,8 +76,8 @@ namespace WindowsFormsApplication1
                     dt = ms.GetCommanTransactionList("idt");
                     rc.common_loadDropDown(dt, ddlTransactionType);
                     label1.Text = "Edit User Individual Transaction";
-                    label8.Visible = false;
-                    txttotAmount.Visible = false;
+                    label8.Visible = true;
+                    txttotAmount.Visible = true;
                     Comman_Transaction ct = new Comman_Transaction(0, "");
                     ct.Text = "Edit User Individual Transaction";
                 }

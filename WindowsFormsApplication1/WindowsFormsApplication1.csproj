@@ -56,6 +56,12 @@
     <Compile Include="AboutBox1.Designer.cs">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddParticalAmountExcludeUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddParticalAmountExcludeUser.Designer.cs">
+      <DependentUpon>AddParticalAmountExcludeUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     <Compile Include="User.cs" />
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddParticalAmountExcludeUser.resx">
+      <DependentUpon>AddParticalAmountExcludeUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
@@ -240,6 +249,8 @@
     <None Include="Resource\profile_change_password.jpg" />
     <None Include="Resource\about_image.jpg" />
     <None Include="Resource\CalculationImg.jpg" />
+    <None Include="Resource\user_remove-512.png" />
+    <None Include="Resource\basic1-113_user_delete_remove-512.png" />
     <Content Include="Resource\welcome-slide-design-backgrounds-powerpoint.jpg" />
     <Content Include="Resource\Welcome.jpg" />
     <Content Include="Resource\WelcomeHD.jpg" />

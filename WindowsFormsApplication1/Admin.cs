@@ -148,5 +148,11 @@ namespace WindowsFormsApplication1
             MonthWiseReport mwr = new MonthWiseReport();
             mwr.ShowDialog();
         }
+
+        private void addParticalAmountToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddParticalAmountExcludeUser apae = new AddParticalAmountExcludeUser();
+            apae.ShowDialog();
+        }
     }
 }

@@ -80,3 +80,4 @@ E:\Ganesh Pendrive Important\Room\WindowsFormsApplication1\WindowsFormsApplicati
 E:\Ganesh Pendrive Important\Room\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
 E:\Ganesh Pendrive Important\Room\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
 E:\Ganesh Pendrive Important\Room\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+E:\Ganesh Pendrive Important\Room\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.AddParticalAmountExcludeUser.resources
