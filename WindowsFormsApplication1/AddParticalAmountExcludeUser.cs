@@ -22,12 +22,12 @@ namespace WindowsFormsApplication1
         private void AddParticalAmountExcludeUser_Load(object sender, EventArgs e)
         {
             List<User> objUser = null;
-            objUser = ms.GetUsersList("user");
+            objUser = ms.GetUsersList("userist");
             //dt = ms.GetUserNameByID("user", 0);
 
             foreach (User obj in objUser)
             {
-                UserFromList.Items.Add(obj);
+                UserFromList.Items.Add(obj.UserName);
                 UserFromList.DisplayMember = "ID";
                 UserFromList.ValueMember = "Name";
             }
@@ -36,42 +36,30 @@ namespace WindowsFormsApplication1
 
         private void btnMoveToOne_Click(object sender, EventArgs e)
         {
-            MoveListBoxItems(UserFromList, UserToList);
-        }
-
-        private void MoveListBoxItems(ListBox source, ListBox destination)
-        {
-            ListBox.SelectedObjectCollection sourceItems = source.SelectedItems;
-            foreach (var item in sourceItems)
+            if (UserFromList.Items.Count > 0)
             {
-                destination.Items.Add(item);
-                destination.ValueMember = "ID";
-                destination.DisplayMember = "Name";
-                UserFromList.Items.Remove(item);
-            }
-
-
-            //while (source.SelectedItems.Count > 0)
-            //{
-
-
-            //source.SelectedItems[0]
-            //}
+                // checking whether listbix1 has items or not if yes then moving items
+                UserToList.Items.Add(UserFromList.SelectedItem.ToString());
+                UserFromList.Items.Remove(UserFromList.SelectedItem);
+            }   
         }
+
 
         private void btnMoveToAll_Click(object sender, EventArgs e)
         {
-            MoveListBoxItems(UserFromList, UserToList);
+
         }
 
         private void btnMoveFromOne_Click(object sender, EventArgs e)
         {
-            MoveListBoxItems(UserFromList, UserToList);
+
         }
 
         private void MoveFromAll_Click(object sender, EventArgs e)
         {
-            MoveListBoxItems(UserFromList, UserToList);
+
         }
+
+        
     }
 }
