@@ -884,5 +884,34 @@ namespace WindowsFormsApplication1
             }
             return res;
         }
+        public SqlDataAdapter GetParaticialExcludeUser()
+        {
+            SqlDataAdapter da = null;
+            try
+            {
+                string sql = @"select apa.Id as ID,ud.Name as [Member Name],InsertedDate as [Inserted Date],Month(InsertedDate) [For The Month],Year(InsertedDate) [For The Year],Descrption,Amount from Ganesh.AddParaticalAmount apa with(nolock)
+                               inner join dbo.UserDetails ud with(nolock) on ud.UserId = apa.UserId
+                               Where Month(InsertedDate) = Month(Getdate()) and Year(InsertedDate) = Year(Getdate())";
+                cn.Open();
+                SqlCommand cmd = new SqlCommand(sql, cn);
+                da = new SqlDataAdapter(cmd);
+                cn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + "\nPlease Call system Administrator.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                cn.Close();
+            }
+            return da;
+        }
+        public bool InsertParaticialAmountData()
+        {
+            bool res = false;
+
+            return res;
+        }
     }
 }

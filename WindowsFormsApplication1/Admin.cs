@@ -151,7 +151,7 @@ namespace WindowsFormsApplication1
 
         private void addParticalAmountToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddParticalAmountExcludeUser apae = new AddParticalAmountExcludeUser();
+            AddParticalAmountExcludeUser apae = new AddParticalAmountExcludeUser(Convert.ToInt32(label2.Text));
             apae.ShowDialog();
         }
     }
