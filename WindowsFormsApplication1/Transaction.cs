@@ -9,6 +9,7 @@ namespace WindowsFormsApplication1
     {
         public int Id;
         public int UserID;
+        public string UserName;
         public DateTime TransactionDate;
         public string TransactionName;
         public decimal Amount;

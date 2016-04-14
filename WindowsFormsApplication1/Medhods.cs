@@ -889,9 +889,7 @@ namespace WindowsFormsApplication1
             SqlDataAdapter da = null;
             try
             {
-                string sql = @"select apa.Id as ID,ud.Name as [Member Name],InsertedDate as [Inserted Date],Month(InsertedDate) [For The Month],Year(InsertedDate) [For The Year],Descrption,Amount from Ganesh.AddParaticalAmount apa with(nolock)
-                               inner join dbo.UserDetails ud with(nolock) on ud.UserId = apa.UserId
-                               Where Month(InsertedDate) = Month(Getdate()) and Year(InsertedDate) = Year(Getdate())";
+                string sql = @"exec [Ganesh].[InsertParaticialAmountData] " + 3 + ",0,'',0,'',0,''";
                 cn.Open();
                 SqlCommand cmd = new SqlCommand(sql, cn);
                 da = new SqlDataAdapter(cmd);
@@ -907,9 +905,32 @@ namespace WindowsFormsApplication1
             }
             return da;
         }
-        public bool InsertParaticialAmountData()
+        public dynamic InsertParaticialAmountData(string UserNames, decimal Amount, int UserId, string Descrption, DateTime Date, int Option, int Id)
         {
-            bool res = false;
+            dynamic res = 0;
+            try
+            {
+                var sql = "[Ganesh].[InsertParaticialAmountData]";
+                DynamicParameters param = new DynamicParameters();
+                param.Add("Option", Option);
+                param.Add("Id", Id);
+                param.Add("UserNames", UserNames);
+                param.Add("Amount", Amount);
+                param.Add("Date", Date);
+                param.Add("UserId", UserId);
+                param.Add("Descrption", Descrption);
+                cn.Open();
+                if(Option == 1)
+                res = cn.Execute(sql, param, commandType: CommandType.StoredProcedure);
+                else
+                    res = cn.Query<Transaction>(sql, param, commandType: CommandType.StoredProcedure).SingleOrDefault();
+                cn.Close();
+            }
+            catch (Exception ex)
+            {
+                cn.Close();
+            }
+
 
             return res;
         }
